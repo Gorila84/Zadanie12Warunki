@@ -1,39 +1,29 @@
-﻿//wiem że nie powinno być po Polsku ;P 
-int weekDay;
+﻿int weekDay;
 Console.WriteLine("Wprowadź numer dnia tygodnia przedział od 1 do 7");
 var enteredDayNumber = Console.ReadLine();
 Int32.TryParse(enteredDayNumber, out weekDay);
 
-
-
 switch (weekDay){
     case 1:
-        WeekDays monday = WeekDays.Poniedziałek;
-        Console.WriteLine(monday);
+        Console.WriteLine(WeekDays.Poniedziałek);
         break;
     case 2:
-        WeekDays tuesday = WeekDays.Wtorek;
-        Console.WriteLine(tuesday);
+        Console.WriteLine(WeekDays.Wtorek);
         break;
     case 3:
-        WeekDays wednesday = WeekDays.Środa;
-        Console.WriteLine(wednesday);
+        Console.WriteLine(WeekDays.Środa);
         break;
     case 4:
-        WeekDays thursday = WeekDays.Czwartek;
-        Console.WriteLine(thursday);
+        Console.WriteLine(WeekDays.Czwartek);
         break;
     case 5:
-        WeekDays friday = WeekDays.Piątek;
-        Console.WriteLine(friday);
+        Console.WriteLine(WeekDays.Piątek);
         break;
     case 6:
-        WeekDays saturday = WeekDays.Sobota;
-        Console.WriteLine(saturday);
+        Console.WriteLine(WeekDays.Sobota);
         break;
     case 7:
-        WeekDays sunday = WeekDays.Niedziela;
-        Console.WriteLine(sunday);
+        Console.WriteLine(WeekDays.Niedziela);
         break;
     default:
         Console.WriteLine("Nie pdoałeś poprawnego numeru.");
